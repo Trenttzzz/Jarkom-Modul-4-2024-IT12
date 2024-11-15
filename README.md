@@ -239,6 +239,12 @@ Fast Ethernet0/1 (A12)
    ![image](https://github.com/user-attachments/assets/fdf7d797-e6f4-4be4-b557-688347e7527f)
 
 
+### TREE CIDR
+
+![dua ya](https://github.com/user-attachments/assets/5e1b78fb-3853-4b6c-9259-36ce824d6346)
+
+
+
 
 
 
