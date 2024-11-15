@@ -192,3 +192,13 @@ Fast Ethernet0/1 (A12)
 	Mask: 255.255.255.240
 	Next Hop: [next hope]
 ```
+
+
+
+
+### CIDR ( GNS)
+
+![image](https://github.com/user-attachments/assets/7bf881c2-f21e-4479-b8ad-ac74488cc3b8)
+
+
+
