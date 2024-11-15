@@ -198,7 +198,23 @@ Fast Ethernet0/1 (A12)
 
 ### CIDR ( GNS)
 
-![image](https://github.com/user-attachments/assets/7bf881c2-f21e-4479-b8ad-ac74488cc3b8)
+![WhatsApp Image 2024-11-16 at 00 35 03_bf0b6042](https://github.com/user-attachments/assets/a463e70f-4017-4752-9fc7-ec44e773d6c7)
+
+#### Penggabungan Subnet
+
+1. Pertama
+   ![WhatsApp Image 2024-11-16 at 00 35 02_2f52a9c0](https://github.com/user-attachments/assets/a1f06998-9859-46cd-b564-52d20d7f70ec)
+
+2. Kedua
+   ![WhatsApp Image 2024-11-16 at 00 35 02_80652a4d](https://github.com/user-attachments/assets/89caeb04-878c-4fa0-9d77-33eb73d08f01)
+
+3. Ketiga
+   ![WhatsApp Image 2024-11-16 at 00 35 02_6d3f8120](https://github.com/user-attachments/assets/ee712bbd-3394-4dca-93c2-dfb5dd071d84)
+
+4. Keempat
+
+
+
 
 
 
