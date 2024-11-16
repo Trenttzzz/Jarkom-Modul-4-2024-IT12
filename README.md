@@ -247,6 +247,8 @@ Fast Ethernet0/1 (A12)
 
 ![image](https://github.com/user-attachments/assets/00b185cb-0781-4d58-ab86-b5904daea045)
 
+### KONFIGURASI NETWORK
+
 
 
 
