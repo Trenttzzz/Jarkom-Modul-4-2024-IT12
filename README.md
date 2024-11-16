@@ -243,6 +243,11 @@ Fast Ethernet0/1 (A12)
 
 ![Tanpa judul (4)](https://github.com/user-attachments/assets/2388e260-5feb-4aae-9da4-3711eaab908f)
 
+### PEMBAGIAN IP
+
+![image](https://github.com/user-attachments/assets/00b185cb-0781-4d58-ab86-b5904daea045)
+
+
 
 
 
