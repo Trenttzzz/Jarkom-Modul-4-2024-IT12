@@ -245,7 +245,7 @@ Fast Ethernet0/1 (A12)
 
 ### PEMBAGIAN IP
 
-![image](https://github.com/user-attachments/assets/00b185cb-0781-4d58-ab86-b5904daea045)
+![image](https://github.com/user-attachments/assets/4fb135ce-e1ca-489d-b379-18d97567e207)
 
 ### KONFIGURASI NETWORK
 
