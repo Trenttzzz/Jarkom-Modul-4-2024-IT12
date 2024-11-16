@@ -277,6 +277,7 @@ iface eth3 inet static
 ```
 
 •	Holo-EN (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -302,6 +303,7 @@ iface eth2 inet static
 ```
 
 •	Holo-Myth (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -327,26 +329,29 @@ iface eth2 inet static
 ```
 
 •	Gura_Ame_Ina (Client)
+
 ```
 #A13
 auto eth0
 iface eth0 inet static
-    address 192.240.1.254
+    address 192.240.0.2
     netmask 255.255.254.0
     gateway 192.240.0.1
 ```
 
 •	Kiara_Calli (Client)
+
 ```
 #A13
 auto eth0
 iface eth0 inet static
-    address 192.240.1.255
+    address 192.240.0.3
     netmask 255.255.254.0
     gateway 192.240.0.1
 ```
 
 •	Holo Advent (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -366,35 +371,40 @@ iface eth1 inet static
 ```
 
 •	FuwaMoco (Client)
+
 ```
 #A19
 auto eth0
 iface eth0 inet static
-    address 192.240.8.30
+    address 192.240.8.2
     netmask 255.255.255.224
     gateway 192.240.8.1
 ```
 
 •	Shiori_Nerissa (Client)
+
 ```
 #A19
 auto eth0
 iface eth0 inet static
-    address 192.240.8.31
+    address 192.240.8.3
     netmask 255.255.255.224
     gateway 192.240.8.1
 ```
+
 •	Biboo (Client)
+
 ```
 #A19
 auto eth0
 iface eth0 inet static
-    address 192.240.8.32
+    address 192.240.8.4
     netmask 255.255.255.224
     gateway 192.240.8.1
 ```
 
 •	Project-Hope (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -402,7 +412,7 @@ iface lo inet loopback
 #A16
 auto eth0
 iface eth0 inet static
-    address 192.240.33.254
+    address 192.240.2.1    
     netmask 255.255.224.0
     gateway 192.240.2.1
 
@@ -414,16 +424,18 @@ iface eth1 inet static
 ```
 
 •	Irys (Client)
+
 ```
 #A17
 auto eth0
 iface eth0 inet static
-    address 192.240.34.70
+    address 192.240.34.66
     netmask 255.255.255.248
     gateway 192.240.34.65
 ```
 
 •	Holo-Council (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -431,7 +443,7 @@ iface lo inet loopback
 #A16
 auto eth0
 iface eth0 inet static
-    address 192.240.33.254
+    address 192.240.2.2
     netmask 255.255.224.0
     gateway 192.240.2.1
 
@@ -442,27 +454,30 @@ iface eth1 inet static
     netmask 255.255.255.192
 ```
 
-
 •	Kronii_Mumei (Client)
+
 ```
 #A18
 auto eth0
 iface eth0 inet static
-    address 192.240.34.62
+    address 192.240.34.2
     netmask 255.255.255.192
     gateway 192.240.34.1
 ```
+
 •	Bae_Fauna (Client)
+
 ```
 #A18
 auto eth0
 iface eth0 inet static
-    address 192.240.34.63
+    address 192.240.34.3
     netmask 255.255.255.192
     gateway 192.240.34.1
 ```
 
 •	Holo-ID (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -494,6 +509,7 @@ iface eth3 inet static
 ```
 
 •	AREA15 (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -513,36 +529,40 @@ iface eth1 inet static
 ```
 
 •	Risu (Client)
+
 ```
 #A9
 auto eth0
 iface eth0 inet static
-    address 192.239.131.254
+    address 192.239.128.2
     netmask 255.255.252.0
     gateway 192.239.128.1
 ```
 
 •	Moona (Client)
+
 ```
 #A9
 auto eth0
 iface eth0 inet static
-    address 192.239.131.255
+    address 192.239.128.3
     netmask 255.255.252.0
     gateway 192.239.128.1
 ```
 
 •	Iofi (Client)
+
 ```
 #A9
 auto eth0
 iface eth0 inet static
-    address 192.239.131.256
+    address 192.239.128.4
     netmask 255.255.252.0
     gateway 192.239.128.1
 ```
 
 •	Holoro (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -562,36 +582,40 @@ iface eth1 inet static
 ```
 
 •	Ollie (Client)
+
 ```
 #A8
 auto eth0
 iface eth0 inet static
-    address 192.239.144.62
+    address 192.239.144.2
     netmask 255.255.252.192
     gateway 192.239.144.1
 ```
 
 •	Anya (Client)
+
 ```
 #A8
 auto eth0
 iface eth0 inet static
-    address 192.239.144.63
+    address 192.239.144.3
     netmask 255.255.252.192
     gateway 192.239.144.1
 ```
 
 •	Reine (Client)
+
 ```
 #A8
 auto eth0
 iface eth0 inet static
-    address 192.239.144.64
+    address 192.239.144.4
     netmask 255.255.252.192
     gateway 192.239.144.1
 ```
 
 •	Holoh3ro (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -611,36 +635,40 @@ iface eth1 inet static
 ```
 
 •	Zeta (Client)
+
 ```
 #A7
 auto eth0
 iface eth0 inet static
-    address 192.239.137.254
+    address 192.239.136.2
     netmask 255.255.254.0
     gateway 192.239.136.1
 ```
 
 •	Kaela (Client)
+
 ```
 #A7
 auto eth0
 iface eth0 inet static
-    address 192.239.137.255
+    address 192.239.136.3
     netmask 255.255.254.0
     gateway 192.239.136.1
 ```
 
 •	Kobo(Client)
+
 ```
 #A7
 auto eth0
 iface eth0 inet static
-    address 192.239.137.256
+    address 192.239.136.4
     netmask 255.255.254.0
     gateway 192.239.136.1
 ```
 
 •	Holo-JP (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -660,6 +688,7 @@ iface eth1 inet static
 ```
 
 •	DEV_IS (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -667,7 +696,7 @@ iface lo inet loopback
 #A10
 auto eth0
 iface eth0 inet static
-    address 192.239.32.6
+    address 192.239.32.2
     netmask 255.255.252.248
     gateway 192.239.32.1
 
@@ -679,36 +708,40 @@ iface eth1 inet static
 ```
 
 •	Ririka_Raden (Client)
+
 ```
 #A14
 auto eth1
 iface eth1 inet static
-    address 192.239.16.14
+    address 192.239.16.2
     netmask 255.255.255.240
     gateway 192.239.16.1
 ```
 
 •	Ao (Client)
+
 ```
 #A14
 auto eth1
 iface eth1 inet static
-    address 192.239.16.15
+    address 192.239.16.3
     netmask 255.255.255.240
     gateway 192.239.16.1
 ```
 
 •	Hajime_Kanade (Client)
+
 ```
 #A14
 auto eth1
 iface eth1 inet static
-    address 192.239.16.16
+    address 192.239.16.4
     netmask 255.255.255.240
     gateway 192.239.16.1
 ```
 
 •	GEN:0 (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -716,7 +749,7 @@ iface lo inet loopback
 #A10
 auto eth0
 iface eth0 inet static
-    address 192.239.32.6
+    address 192.239.32.3
     netmask 255.255.252.248
     gateway 192.239.32.1
 
@@ -728,26 +761,29 @@ iface eth1 inet static
 ```
 
 •	MiComet (Client)
+
 ```
 #A15
 auto eth0
 iface eth0 inet static
-    address 192.239.7.254
+    address 192.239.0.2
     netmask 255.255.248.0
     gateway 192.239.0.1
 ```
 
 •	Sora_Robo_AZKi (Client)
+
 ```
 #A15
 auto eth0
 iface eth0 inet static
-    address 192.239.7.255
+    address 192.239.0.3
     netmask 255.255.248.0
     gateway 192.239.0.1
 ```
 
 •	GEN:1 (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -755,7 +791,7 @@ iface lo inet loopback
 #A15
 auto eth0
 iface eth0 inet static
-    address 192.239.7.254
+    address 192.239.0.4
     netmask 255.255.248.0
     gateway 192.239.0.1
 
@@ -773,26 +809,29 @@ iface eth2 inet static
 ```
 
 •	FBK_Matsuri (Client)
+
 ```
 #A22
 auto eth0
 iface eth0 inet static
-    address 192.239.9.254
+    address 192.239.8.2
     netmask 255.255.254.0
     gateway 192.239.8.1
 ```
 
 •	Aki_Hachama (Client)
+
 ```
 #A22
 auto eth0
 iface eth0 inet static
-    address 192.239.9.255
+    address 192.239.8.3
     netmask 255.255.254.0
     gateway 192.239.8.1
 ```
 
 •	Gamers (Gateway)
+
 ```
 auto lo
 iface lo inet loopback
@@ -812,50 +851,38 @@ iface eth1 inet static
 ```
 
 •	Korone (Client)
+
 ```
 #A20
 auto eth0
 iface eth0 inet static
-    address 192.239.10.126
+    address 192.239.10.2
     netmask 255.255.255.128
     gateway 192.239.10.1
 ```
 
 •	Okayu (Client)
+
 ```
 #A20
 auto eth0
 iface eth0 inet static
-    address 192.239.10.127
+    address 192.239.10.3
     netmask 255.255.255.128
     gateway 192.239.10.1
 ```
+
 
 •	Mio (Client)
+
 ```
 #A20
 auto eth0
 iface eth0 inet static
-    address 192.239.10.128
+    address 192.239.10.4
     netmask 255.255.255.128
     gateway 192.239.10.1
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
