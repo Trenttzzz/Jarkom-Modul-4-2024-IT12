@@ -249,11 +249,6 @@ Fast Ethernet0/1 (A12)
 
 ### KONFIGURASI NETWORK
 
-
-KONFIG
-Kalau 2, itu address di awal
-Kalau 3, address akhir, gateaway awal
-
 •	Hololive (Gateway)
 ```
 auto lo
