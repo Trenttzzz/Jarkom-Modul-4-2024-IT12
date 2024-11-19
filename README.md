@@ -241,13 +241,18 @@ Fast Ethernet0/1 (A12)
 
 ### TREE CIDR
 
-![Tanpa judul (4)](https://github.com/user-attachments/assets/2388e260-5feb-4aae-9da4-3711eaab908f)
+![Tanpa judul (7)](https://github.com/user-attachments/assets/5b53495f-44ae-4cd9-8c08-2b7d9f36608a)
 
 ### PEMBAGIAN IP
 
-![image](https://github.com/user-attachments/assets/4fb135ce-e1ca-489d-b379-18d97567e207)
+![Screenshot 2024-11-19 232439](https://github.com/user-attachments/assets/a4ef0d91-34a3-4965-982c-4182dc4b6e2e)
 
 ### KONFIGURASI NETWORK
+
+
+KONFIG
+Kalau 2, itu address di awal
+Kalau 3, address akhir, gateaway awal
 
 •	Hololive (Gateway)
 ```
@@ -298,7 +303,7 @@ iface eth1 inet static
 #A11
 auto eth2
 iface eth2 inet static
-    address 192.240.8.33
+    address 192.240.40.1
     netmask 255.255.255.252
 ```
 
@@ -324,8 +329,8 @@ iface eth1 inet static
 #A16
 auto eth2
 iface eth2 inet static
-    address 192.240.2.1
-    netmask 255.255.224.0
+    address 192.240.2.129
+    netmask 255.255.255.248
 ```
 
 •	Gura_Ame_Ina (Client)
@@ -359,9 +364,9 @@ iface lo inet loopback
 #A11
 auto eth0
 iface eth0 inet static
-    address 192.240.8.34
+    address 192.240.40.2
     netmask 255.255.255.252
-    gateway 192.240.8.33
+    gateway 192.240.40.1
 
 #A19
 auto eth1
@@ -412,14 +417,14 @@ iface lo inet loopback
 #A16
 auto eth0
 iface eth0 inet static
-    address 192.240.2.1    
-    netmask 255.255.224.0
-    gateway 192.240.2.1
+    address 192.240.2.130   
+    netmask 255.255.255.248
+    gateway 192.240.2.129
 
 #A17
 auto eth1
 iface eth1 inet static
-    address 192.240.34.65
+    address 192.240.2.65
     netmask 255.255.255.248
 ```
 
@@ -429,9 +434,9 @@ iface eth1 inet static
 #A17
 auto eth0
 iface eth0 inet static
-    address 192.240.34.66
+    address 192.240.2.66
     netmask 255.255.255.248
-    gateway 192.240.34.65
+    gateway 192.240.2.65
 ```
 
 •	Holo-Council (Gateway)
@@ -443,14 +448,14 @@ iface lo inet loopback
 #A16
 auto eth0
 iface eth0 inet static
-    address 192.240.2.2
-    netmask 255.255.224.0
-    gateway 192.240.2.1
+    address 192.240.2.131
+    netmask 255.255.255.248
+    gateway 192.240.2.129
 
 #A18
 auto eth1
 iface eth1 inet static
-    address 192.240.34.1
+    address 192.240.2.1
     netmask 255.255.255.192
 ```
 
@@ -460,9 +465,9 @@ iface eth1 inet static
 #A18
 auto eth0
 iface eth0 inet static
-    address 192.240.34.2
+    address 192.240.2.2
     netmask 255.255.255.192
-    gateway 192.240.34.1
+    gateway 192.240.2.1
 ```
 
 •	Bae_Fauna (Client)
@@ -471,9 +476,9 @@ iface eth0 inet static
 #A18
 auto eth0
 iface eth0 inet static
-    address 192.240.34.3
+    address 192.240.2.3
     netmask 255.255.255.192
-    gateway 192.240.34.1
+    gateway 192.240.2.1
 ```
 
 •	Holo-ID (Gateway)
@@ -498,7 +503,7 @@ iface eth1 inet static
 #A5
 auto eth2
 iface eth2 inet static
-    address 192.239.144.65
+    address 192.239.208.1
     netmask 255.255.255.252
 
 #A6
@@ -570,15 +575,15 @@ iface lo inet loopback
 #A5
 auto eth0
 iface eth0 inet static
-    address 192.239.144.66
+    address 192.239.208.2
     netmask 255.255.255.252
-    gateway 192.239.144.65
+    gateway 192.239.208.1
 
 #A8
 auto eth1
 iface eth1 inet static
     address 192.239.144.1
-    netmask 255.255.252.192
+    netmask 255.255.255.192
 ```
 
 •	Ollie (Client)
@@ -678,13 +683,13 @@ auto eth0
 iface eth0 inet static
     address 192.239.64.2
     netmask 255.255.255.252
-   gateway 192.239.64.1
+    gateway 192.239.64.1
 
 #A10
 auto eth1
 iface eth1 inet static
     address 192.239.32.1
-    255.255.252.248
+    netmask 255.255.255.248
 ```
 
 •	DEV_IS (Gateway)
@@ -697,7 +702,7 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet static
     address 192.239.32.2
-    netmask 255.255.252.248
+    netmask 255.255.255.248
     gateway 192.239.32.1
 
 #A14
@@ -750,7 +755,7 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet static
     address 192.239.32.3
-    netmask 255.255.252.248
+    netmask 255.255.255.248
     gateway 192.239.32.1
 
 #A15
@@ -884,6 +889,146 @@ iface eth0 inet static
     gateway 192.239.10.1
 ```
 
+### ROUTING
 
 
+•	Hololive
 
+```
+#hololiveA1holomythA12
+post-up route add -net 192.240.4.0 netmask 255.255.255.252 gw 192.240.16.2
+
+#A13Gurame
+post-up route add -net 192.240.0.0 netmask 255.255.254.0 gw 192.240.16.2
+
+#A16ProjectHope
+post-up route add -net 192.240.2.128 netmask 255.255.255.248 gw 192.240.16.2
+
+#A17ClientIrys
+post-up route add -net 192.240.2.64 netmask 255.255.255.248 gw 192.240.16.2
+
+#A18ClientKroniBae
+post-up route add -net 192.240.2.0 netmask 255.255.255.192 gw 192.240.16.2
+
+#A11HoloAdvent
+post-up route add -net 192.240.40.0  netmask 255.255.255.252 gw 192.240.16.2
+
+#A19ClientFuwadll
+post-up route add -net 192.240.8.0  netmask 255.255.255.224 gw 192.240.16.2
+
+#A3Holoro
+post-up route add -net 192.239.208.0 netmask 255.255.255.252 gw 192.239.160.2
+
+#A4Area15
+post-up route add -net 192.239.132.0 netmask 255.255.255.252 gw 192.239.160.2
+
+#A9ClientMoonadll
+post-up route add -net 192.239.128.0 netmask 255.255.252.0 gw 192.239.160.2
+
+#A8ClientAnya
+post-up route add -net 192.239.144.0 netmask 255.255.255.192 gw 192.239.160.2
+
+#A6Holoh3ro
+post-up route add -net 192.239.138.0 netmask 255.255.255.252 gw 192.239.160.2
+
+#A7ClientZetadll
+post-up route add -net 192.239.136.0 netmask 255.255.254.0 gw 192.239.160.2
+
+#A10GEN&DEV
+post-up route add -net 192.239.32.0 netmask 255.255.255.248 gw 192.239.64.2
+
+#A14ClientRirika
+post-up route add -net 192.239.16.0 netmask 255.255.255.240 gw 192.239.64.2
+
+#A15ClientMiComet
+post-up route add -net 192.239.0.0 netmask 255.255.248.0 gw 192.239.64.2
+
+#A21Gamers
+post-up route add -net 192.239.10.128 netmask 255.255.255.252 gw 192.239.64.2
+```
+
+•	Holo-EN
+
+```
+#HoloENA12-A13Client
+post-up route add -net 192.240.0.0 netmask 255.255.254.0 gw 192.240.4.2
+
+#A16ProjectHope
+post-up route add -net 192.240.2.128 netmask 255.255.255.248 gw 192.240.4.2
+
+#A17ClientIrys
+post-up route add -net 192.240.2.64 netmask 255.255.255.248 gw 192.240.4.2
+
+#A18ClientKroniBae
+post-up route add -net 192.240.2.0 netmask 255.255.255.192 gw 192.240.4.2
+
+#A19ClientFuwadll
+post-up route add -net 192.240.8.0 netmask 255.255.255.224 gw 192.240.40.2
+```
+
+•	HoloMyth
+
+```
+#MythA12HololiveA1
+post-up route add -net 192.240.16.0 netmask 255.255.255.252 gw 192.240.4.1
+
+#A17ClientIrys
+post-up route add -net 192.240.2.64 netmask 255.255.255.248 gw 192.240.2.130
+
+#A18ClientKroniBae
+post-up route add -net 192.240.2.0 netmask 255.255.255.192 gw  192.240.2.131
+```
+
+•	HoloAdvent
+
+```
+#A1Hololive
+post-up route add -net 192.240.40.0  netmask 255.255.255.252 gw 192.240.40.1
+```
+
+•	Holo-ID
+
+```
+#A9ClientMoonadll
+post-up route add -net 192.239.128.0 netmask 255.255.252.0 gw 192.239.132.2
+
+#A8ClientAnyadll
+post-up route add -net 192.239.144.0 netmask 255.255.255.192 gw 192.239.208.2
+
+#A7ClientZetadll
+post-up route add -net 192.239.136.0 netmask 255.255.254.0 gw 192.239.138.2
+```
+
+•	AREA15
+
+```
+#A3Hololive
+post-up route add -net 192.239.160.0 netmask 255.255.255.252 gw 192.239.132.1
+```
+
+•	Holoro
+
+```
+#A3Holoro
+post-up route add -net 192.239.160.0  netmask 255.255.255.252 gw 192.239.208.1
+```
+
+•	Holoh3ro
+
+```
+#A3Hololive
+post-up route add -net 192.239.160.0 netmask 255.255.255.252 gw 192.239.138.1
+```
+
+•	Holo-Jp
+
+```
+#A14ClientRirikadll
+post-up route add -net 192.239.16.0 netmask 255.255.255.240 gw 192.239.32.2
+
+#A15ClientMicometdll
+post-up route add -net 192.239.0.0 netmask 255.255.248.0 gw 192.239.32.3
+
+#A21Gamers
+post-up route add -net 192.239.10.128 netmask 255.255.255.252 gw 192.239.0.4
+```
