@@ -68,7 +68,7 @@ Fast Ethernet0/0 (A3)
 
 192.239.19.96/30 via 192.239.19.74 (A11)
 
-    Network: 192.239.19.48
+    Network: 192.239.19.96
     Mask: 255.255.255.252
     Next Hop: 192.239.19.74
 
@@ -142,7 +142,7 @@ Fast Ethernet0/0 (A3)
 **Interfaces**
 ```
 Fast Ethernet0/0 (A1)
-- IPv4 Address : 192.239.19.73
+- IPv4 Address : 192.239.19.74
 - Subnet Mask : 255.255.255.252
 
 Fast Ethernet1/0 (A11)
@@ -162,38 +162,647 @@ Fast Ethernet0/1 (A12)
 	Mask: 0.0.0.0
 	Next Hop: 192.239.19.73
 
-192.239.12.0/23 via [next hope] (A13)
+192.239.12.0/23 via 192.239.19.102 (A13)
 
 	Network: 192.239.12.0
 	Mask: 255.255.254.0
-	Next Hop: [next hope]
+	Next Hop: 192.239.19.102
 
-192.239.19.56/29 via [next hope] (A16)
+192.239.19.56/29 via 192.239.19.102 (A16)
 
 	Network: 192.239.19.56
 	Mask: 255.255.255.248
-	Next Hop: [next hope]
+	Next Hop: 192.239.19.102
 
-192.239.19.64/29 via [next hope] (A17)
+192.239.19.64/29 via 192.239.19.102 (A17)
 
 	Network: 192.239.19.64
 	Mask: 255.255.255.248
-	Next Hop: [next hope]
+	Next Hop: 192.239.19.102
 
-192.239.18.128/26 via [next hope] (A18)
+192.239.18.128/26 via 192.239.19.102 (A18)
 
 	Network: 192.239.18.128
 	Mask: 255.255.255.192
-	Next Hop: [next hope]
+	Next Hop: 192.239.19.102
 
-192.239.19.0/28 via [next hope] (A19)
+192.239.19.0/27 via 192.239.19.98 (A19)
 
 	Network: 192.239.19.0
-	Mask: 255.255.255.240
-	Next Hop: [next hope]
+	Mask: 255.255.255.224
+	Next Hop: 192.239.19.98
+```
+### Holo-Myth
+**Interfaces**
+```
+Fast Ethernet0/0 (A12)
+- IPv4 Address : 192.239.19.102
+- Subnet Mask : 255.255.255.252
+
+Fast Ethernet1/0 (A16)
+- IPv4 Address : 192.239.19.57
+- Subnet Mask : 255.255.255.248
+
+Fast Ethernet0/1 (A13)
+- IPv4 Address : 192.239.12.1
+- Subnet Mask : 255.255.254.0
 ```
 
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.101 (Default to Holo-EN)
 
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.101
+
+192.239.19.64/29 via 192.239.19.58 (A17)
+
+	Network: 192.239.19.64
+	Mask: 255.255.255.248
+	Next Hop: 192.239.19.58
+
+192.239.18.128/26 via 192.239.19.58 (A18)
+
+	Network: 192.239.18.128
+	Mask: 255.255.255.192
+	Next Hop: 192.239.19.58
+
+```
+
+#### Gura-Ame-Ina (PC)
+```
+Fast Ethernet0/0 (A13)
+- IPv4 Address : 192.239.12.3
+- Subnet Mask : 255.255.254.0
+- Default Gateway : 192.239.12.1
+```
+
+#### Kiara-Calli (PC)
+```
+Fast Ethernet0/0 (A13)
+- IPv4 Address : 192.239.12.4
+- Subnet Mask : 255.255.254.0
+- Default Gateway : 192.239.12.1
+```
+
+### Holo-Council
+**Interfaces**
+```
+Fast Ethernet0/1 (A18)
+- IPv4 Address : 192.239.18.129
+- Subnet Mask : 255.255.255.192
+
+Fast Ethernet0/0 (A16)
+- IPv4 Address : 192.239.19.59
+- Subnet Mask : 255.255.255.248
+
+```
+
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.57 (Default to Holo-Myth)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.57
+
+192.239.19.64/29 via 192.239.19.60 (A17)
+
+	Network: 192.239.19.64
+	Mask: 255.255.255.248
+	Next Hop: 192.239.19.58
+
+```
+#### Kronii_Mumei (PC)
+```
+Fast Ethernet0/0 (A18)
+- IPv4 Address : 192.239.18.130
+- Subnet Mask : 255.255.255.192
+- Default Gateway : 192.239.18.129
+```
+
+#### Bae_Fauna (PC)
+```
+Fast Ethernet0/0 (A18)
+- IPv4 Address : 192.239.18.131
+- Subnet Mask : 255.255.255.192
+- Default Gateway : 192.239.18.129
+```
+
+### Project-Hope
+**Interfaces**
+```
+Fast Ethernet0/1 (A17)
+- IPv4 Address : 192.239.19.65
+- Subnet Mask : 255.255.255.248
+
+Fast Ethernet0/0 (A16)
+- IPv4 Address : 192.239.19.58
+- Subnet Mask : 255.255.255.248
+
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.57 (Default to Holo-Myth)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.57
+
+192.239.18.128/26 via 192.239.19.58 (A18)
+
+	Network: 192.239.18.128
+	Mask: 255.255.255.192
+	Next Hop: 192.239.19.59
+
+```
+#### Irys (PC)
+```
+Fast Ethernet0/0 (A17)
+- IPv4 Address : 192.239.19.66
+- Subnet Mask : 255.255.255.248
+- Default Gateway : 192.239.19.65
+```
+
+### Holo-Advent
+**Interfaces**
+```
+Fast Ethernet0/0 (A11)
+- IPv4 Address : 192.239.19.98
+- Subnet Mask : 255.255.255.252
+
+Fast Ethernet0/1 (A19)
+- IPv4 Address : 192.239.19.1
+- Subnet Mask : 255.255.255.224
+
+```
+
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.97 (Default to Holo-EN)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.97
+
+```
+#### FuwaMoco (PC)
+```
+Fast Ethernet0/0 (A19)
+- IPv4 Address : 192.239.19.2
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.239.19.1
+```
+#### Shiori_Nerissa (PC)
+```
+Fast Ethernet0/0 (A19)
+- IPv4 Address : 192.239.19.3
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.239.19.1
+```
+#### Biboo (PC)
+```
+Fast Ethernet0/0 (A19)
+- IPv4 Address : 192.239.19.4
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.239.19.1
+```
+
+### Holo-ID
+**Interfaces**
+```
+Fast Ethernet0/0 (A3)
+- IPv4 Address : 192.239.19.82
+- Subnet Mask : 255.255.255.252
+
+Fast Ethernet0/1 (A4)
+- IPv4 Address : 192.239.19.85
+- Subnet Mask : 255.255.255.252
+
+Fast Ethernet1/0 (A5)
+- IPv4 Address : 192.239.19.89
+- Subnet Mask : 255.255.255.252
+
+Fast Ethernet1/1 (A6)
+- IPv4 Address : 192.239.19.93
+- Subnet Mask : 255.255.255.252
+
+```
+
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.81 (Default to Hololive)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.81
+
+192.239.8.0/22 via 192.239.19.86 (A9)
+
+	Network: 192.239.8.0
+	Mask: 255.255.252.0
+	Next Hop: 192.239.19.86
+
+192.239.18.192/26 via 192.239.19.90 (A8)
+
+	Network: 192.239.18.192
+	Mask: 255.255.255.192
+	Next Hop: 192.239.19.90
+
+192.239.16.0/23 via 192.239.19.94 (A7)
+
+	Network: 192.239.16.0
+	Mask: 255.255.254.0
+	Next Hop: 192.239.19.94
+
+```
+### AREA-15
+**Interfaces**
+```
+Fast Ethernet0/1 (A9)
+- IPv4 Address : 192.239.8.1
+- Subnet Mask : 255.255.252.0
+
+Fast Ethernet0/0 (A4)
+- IPv4 Address : 192.239.19.86
+- Subnet Mask : 255.255.255.252
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.85 (Default to Holo-ID)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.85
+
+```
+#### Risu (PC)
+```
+Fast Ethernet0/0 (A9)
+- IPv4 Address : 192.239.8.2
+- Subnet Mask : 255.255.252.0
+- Default Gateway : 192.239.8.1
+```
+#### Moona (PC)
+```
+Fast Ethernet0/0 (A9)
+- IPv4 Address : 192.239.8.3
+- Subnet Mask : 255.255.252.0
+- Default Gateway : 192.239.8.1
+```
+#### Lofi (PC)
+```
+Fast Ethernet0/0 (A9)
+- IPv4 Address : 192.239.8.4
+- Subnet Mask : 255.255.252.0
+- Default Gateway : 192.239.8.1
+```
+
+### holoro
+**Interfaces**
+```
+Fast Ethernet0/1 (A8)
+- IPv4 Address : 192.239.18.193
+- Subnet Mask : 255.255.255.192
+
+Fast Ethernet0/0 (A5)
+- IPv4 Address : 192.239.19.90
+- Subnet Mask : 255.255.255.252
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.89 (Default to Holo-ID)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.89
+
+```
+#### Ollie (PC)
+```
+Fast Ethernet0/0 (A8)
+- IPv4 Address : 192.239.18.194
+- Subnet Mask : 255.255.255.192
+- Default Gateway : 192.239.18.193
+```
+#### Anya (PC)
+```
+Fast Ethernet0/0 (A8)
+- IPv4 Address : 192.239.18.195
+- Subnet Mask : 255.255.255.192
+- Default Gateway : 192.239.18.193
+```
+#### Reine (PC)
+```
+Fast Ethernet0/0 (A8)
+- IPv4 Address : 192.239.18.196
+- Subnet Mask : 255.255.255.192
+- Default Gateway : 192.239.18.193
+```
+
+### holoh3ro
+**Interfaces**
+```
+Fast Ethernet0/1 (A7)
+- IPv4 Address : 192.239.16.1
+- Subnet Mask : 255.255.254.0
+
+Fast Ethernet0/0 (A6)
+- IPv4 Address : 192.239.19.94
+- Subnet Mask : 255.255.255.252
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.93 (Default to Holo-ID)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.93
+
+```
+#### Zeta (PC)
+```
+Fast Ethernet0/0 (A7)
+- IPv4 Address : 192.239.16.2
+- Subnet Mask : 255.255.254.0
+- Default Gateway : 192.239.16.1
+```
+#### Kaela (PC)
+```
+Fast Ethernet0/0 (A7)
+- IPv4 Address : 192.239.16.3
+- Subnet Mask : 255.255.254.0
+- Default Gateway : 192.239.16.1
+```
+#### Kobo (PC)
+```
+Fast Ethernet0/0 (A7)
+- IPv4 Address : 192.239.16.4
+- Subnet Mask : 255.255.254.0
+- Default Gateway : 192.239.16.1
+```
+
+### Holo-JP
+**Interfaces**
+```
+Fast Ethernet0/0 (A2)
+- IPv4 Address : 192.239.19.78
+- Subnet Mask : 255.255.255.252
+
+Fast Ethernet0/1 (A10)
+- IPv4 Address : 192.239.19.49 -> (1) sisa 50 (fa0 dev_is)dan 51 (fa0 gen:0)
+- Subnet Mask : 255.255.255.248
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.77 (Default to Hololive)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.77
+
+192.239.19.32/28 via 192.239.19.50 (A14)
+
+	Network: 192.239.19.32
+	Mask: 255.255.255.240
+	Next Hop: 192.239.19.50
+
+192.239.0.0/21 via 192.239.19.51 (A15)
+
+	Network: 192.239.0.0
+	Mask: 255.255.248.0
+	Next Hop: 192.239.19.51
+
+192.239.18.0/25 via 192.239.19.51 (A20)
+
+	Network: 192.239.18.0
+	Mask: 255.255.255.128
+	Next Hop: 192.239.19.51
+
+192.239.19.104/30 via 192.239.19.51 (A21)
+
+	Network: 192.239.19.104
+	Mask: 255.255.255.252
+	Next Hop: 192.239.19.51
+
+192.239.14.0/23 via 192.239.19.51 (A22)
+
+	Network: 192.239.14.0
+	Mask: 255.255.254.0
+	Next Hop: 192.239.19.51
+```
+
+### DEV_IS
+**Interfaces**
+```
+Fast Ethernet0/0 (A10)
+- IPv4 Address : 192.239.19.50 -> (2) sisa 51 (fa0 gen:0)
+- Subnet Mask : 255.255.255.248
+
+Fast Ethernet0/1 (A14)
+- IPv4 Address : 192.239.19.33
+- Subnet Mask : 255.255.255.240
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.49 (Default to Holo-JP)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.49
+
+192.239.0.0/21 via 192.239.19.51 (A15)
+
+	Network: 192.239.0.0
+	Mask: 255.255.248.0
+	Next Hop: 192.239.19.51
+
+192.239.18.0/25 via 192.239.19.51 (A20)
+
+	Network: 192.239.18.0
+	Mask: 255.255.255.128
+	Next Hop: 192.239.19.51
+
+192.239.19.104/30 via 192.239.19.51 (A21)
+
+	Network: 192.239.19.104
+	Mask: 255.255.255.252
+	Next Hop: 192.239.19.51
+
+192.239.14.0/23 via 192.239.19.51 (A22)
+
+	Network: 192.239.14.0
+	Mask: 255.255.254.0
+	Next Hop: 192.239.19.51
+```
+#### Ririka_Raden (PC)
+```
+Fast Ethernet0/0 (A14)
+- IPv4 Address : 192.239.19.34
+- Subnet Mask : 255.255.255.240
+- Default Gateway : 192.239.19.33
+```
+#### Ao (PC)
+```
+Fast Ethernet0/0 (A14)
+- IPv4 Address : 192.239.19.35
+- Subnet Mask : 255.255.255.240
+- Default Gateway : 192.239.19.33
+```
+#### Hajime_Kanade (PC)
+```
+Fast Ethernet0/0 (A14)
+- IPv4 Address : 192.239.19.36
+- Subnet Mask : 255.255.255.240
+- Default Gateway : 192.239.19.33
+```
+
+### GEN:0
+**Interfaces**
+```
+Fast Ethernet0/0 (A10)
+- IPv4 Address : 192.239.19.51
+- Subnet Mask : 255.255.255.248
+
+Fast Ethernet0/1 (A15)
+- IPv4 Address : 192.239.0.1
+- Subnet Mask : 255.255.248.0
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.49 (Default to Holo-JP)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.49
+
+192.239.19.32/28 via 192.239.19.50 (A14)
+
+	Network: 192.239.19.32
+	Mask: 255.255.255.240
+	Next Hop: 192.239.19.50
+
+192.239.18.0/25 via 192.239.19.52 (A20)
+
+	Network: 192.239.18.0
+	Mask: 255.255.255.128
+	Next Hop: 192.239.0.2
+
+192.239.19.104/30 via 192.239.19.52 (A21)
+
+	Network: 192.239.19.104
+	Mask: 255.255.255.252
+	Next Hop: 192.239.0.2
+
+192.239.14.0/23 via 192.239.19.52 (A22)
+
+	Network: 192.239.14.0
+	Mask: 255.255.254.0
+	Next Hop: 192.239.0.2
+
+```
+#### MiComet (PC)
+```
+Fast Ethernet0/0 (A15)
+- IPv4 Address : 192.239.0.3
+- Subnet Mask : 255.255.248.0
+- Default Gateway : 192.239.0.1
+```
+#### Sora_Robo_AZKI (PC)
+```
+Fast Ethernet0/0 (A15)
+- IPv4 Address : 192.239.0.4
+- Subnet Mask : 255.255.248.0
+- Default Gateway : 192.239.0.1
+```
+
+### GEN:1
+**Interfaces**
+```
+Fast Ethernet0/0 (A15)
+- IPv4 Address : 192.239.0.2
+- Subnet Mask : 255.255.248.0
+
+Fast Ethernet0/1 (A22)
+- IPv4 Address : 192.239.14.1
+- Subnet Mask : 255.255.254.0
+
+Fast Ethernet1/0 (A21)
+- IPv4 Address : 192.239.19.105
+- Subnet Mask : 255.255.255.252
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.0.1 (Default to GEN:0)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.0.1
+
+192.239.18.0/25 via 192.239.19.50 (A20)
+
+	Network: 192.239.18.0
+	Mask: 255.255.255.128
+	Next Hop: 192.239.19.106
+
+```
+#### FBK_Matsuri (PC)
+```
+Fast Ethernet0/0 (A22)
+- IPv4 Address : 192.239.14.2
+- Subnet Mask : 255.255.254.0
+- Default Gateway : 192.239.14.1
+```
+#### Aki_Hachama (PC)
+```
+Fast Ethernet0/0 (A22)
+- IPv4 Address : 192.239.14.3
+- Subnet Mask : 255.255.254.0
+- Default Gateway : 192.239.14.1
+```
+
+### GAMERS
+**Interfaces**
+```
+Fast Ethernet0/0 (A21)
+- IPv4 Address : 192.239.19.106
+- Subnet Mask : 255.255.255.252
+
+Fast Ethernet0/1 (A20)
+- IPv4 Address : 192.239.18.1
+- Subnet Mask : 255.255.255.128
+
+```
+**Static Routes**
+```
+0.0.0.0/0 via 192.239.19.105 (Default to GEN:1)
+
+	Network: 0.0.0.0
+	Mask: 0.0.0.0
+	Next Hop: 192.239.19.105
+```
+#### Korone (PC)
+```
+Fast Ethernet0/0 (A20)
+- IPv4 Address : 192.239.18.2
+- Subnet Mask : 255.255.255.128
+- Default Gateway : 192.239.18.1
+```
+#### Okayu (PC)
+```
+Fast Ethernet0/0 (A20)
+- IPv4 Address : 192.239.18.3
+- Subnet Mask : 255.255.255.128
+- Default Gateway : 192.239.18.1
+```
+#### Mio (PC)
+```
+Fast Ethernet0/0 (A20)
+- IPv4 Address : 192.239.18.4
+- Subnet Mask : 255.255.255.128
+- Default Gateway : 192.239.18.1
+```
 
 
 ### CIDR ( GNS)
