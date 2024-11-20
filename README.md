@@ -7,6 +7,13 @@
 
 ![image](https://github.com/user-attachments/assets/8c75c8e2-f6bd-48eb-8bcd-40c05d4dd4f8)
 
+### Pembagian IP - VLSM
+
+![image](https://github.com/user-attachments/assets/f1d8bdac-8444-43c9-8d7b-e12ffa83077d)
+
+### Tree IP - VLSM
+
+[IMAGE TREE]
 
 ### Konfigurasi
 ### Hololive
