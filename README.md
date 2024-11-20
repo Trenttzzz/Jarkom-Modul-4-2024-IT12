@@ -866,11 +866,6 @@ Fast Ethernet0/0 (A20)
 
 ![Screenshot 2024-11-19 232439](https://github.com/user-attachments/assets/a4ef0d91-34a3-4965-982c-4182dc4b6e2e)
 
-
-KONFIG
-Kalau 2, itu address di awal
-Kalau 3, address akhir, gateaway awal
-
 ### KONFIGURASI NETWORK
 
 •	Hololive (Gateway)
