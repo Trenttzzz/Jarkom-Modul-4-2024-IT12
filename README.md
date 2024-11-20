@@ -1425,7 +1425,7 @@ auto eth1
 iface eth1 inet static
     address 192.239.10.1
     netmask 255.255.255.128
-``` 
+```
 
 •	Korone (Client)
 
@@ -1461,10 +1461,7 @@ iface eth0 inet static
     gateway 192.239.10.1
 ```
 
-
-
 ### ROUTING
-
 
 •	Hololive
 
@@ -1618,7 +1615,6 @@ post-up route add -net 192.239.8.0 netmask 255.255.254.0 gw 192.239.32.3
 #A20ClientKoronedll
 post-up route add -net 192.239.10.0 netmask 255.255.255.128 gw 192.239.32.3
 ```
-
 
 •	GEN-0
 
