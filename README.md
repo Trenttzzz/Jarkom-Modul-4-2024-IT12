@@ -813,6 +813,12 @@ Fast Ethernet0/0 (A20)
 - Subnet Mask : 255.255.255.128
 - Default Gateway : 192.239.18.1
 ```
+### Testing
+
+
+
+https://github.com/user-attachments/assets/3085584a-bebb-4c4d-a34f-4c335f352b8c
+
 
 
 ### CIDR ( GNS)
