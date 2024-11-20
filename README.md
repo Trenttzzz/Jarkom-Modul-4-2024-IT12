@@ -1,9 +1,12 @@
 # Laporan Praktikum Modul 4
 
-## Kelompok 12
+## Kelompok IT12
 
 ## VLSM Menggunakan CPT
 ### Topologi
+
+![image](https://github.com/user-attachments/assets/8c75c8e2-f6bd-48eb-8bcd-40c05d4dd4f8)
+
 
 ### Konfigurasi
 ### Hololive
