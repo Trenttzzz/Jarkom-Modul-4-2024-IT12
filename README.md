@@ -13,7 +13,7 @@
 
 ### Tree IP - VLSM
 
-[IMAGE TREE]
+![vlsm-tree-it12 drawio](https://github.com/user-attachments/assets/708c2de6-a094-4069-aea4-5aa6a9019cc8)
 
 ### Konfigurasi
 ### Hololive
@@ -693,19 +693,19 @@ Fast Ethernet0/1 (A15)
 	Mask: 255.255.255.240
 	Next Hop: 192.239.19.50
 
-192.239.18.0/25 via 192.239.19.52 (A20)
+192.239.18.0/25 via 192.239.0.2 (A20)
 
 	Network: 192.239.18.0
 	Mask: 255.255.255.128
 	Next Hop: 192.239.0.2
 
-192.239.19.104/30 via 192.239.19.52 (A21)
+192.239.19.104/30 via 192.239.0.2 (A21)
 
 	Network: 192.239.19.104
 	Mask: 255.255.255.252
 	Next Hop: 192.239.0.2
 
-192.239.14.0/23 via 192.239.19.52 (A22)
+192.239.14.0/23 via 192.239.0.2 (A22)
 
 	Network: 192.239.14.0
 	Mask: 255.255.254.0
